@@ -1,8 +1,8 @@
-import { IoLogoInstagram, IoLogoLinkedin, IoLogoTiktok, IoMail } from "react-icons/io5";
+import { IoLogoLinkedin, IoLogoTiktok, IoMail } from "react-icons/io5";
 import { RiInstagramFill } from "react-icons/ri";
 
 function App() {
-
+  
   return (
     <>
       <header>
