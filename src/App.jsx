@@ -1,33 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { IoLogoInstagram, IoLogoLinkedin, IoLogoTiktok, IoMail } from "react-icons/io5";
+import { RiInstagramFill } from "react-icons/ri";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <div className="home">
+          <a href=""><h1>Joey Bezner</h1></a>
+          <div className="headerLinkContainer">
+            <a className="headerLink" href="">Works</a>
+            <a className="headerLink" href="">Experience</a>
+            <a className="headerLink" href="">About</a>
+          </div>
+          <nav>
+            <a className="icon" href="https://www.linkedin.com/in/joeybezner/" target="_blank"><IoLogoLinkedin /></a>
+            <a className="icon" href="https://www.instagram.com/joeys._art/" target="_blank"><RiInstagramFill /></a>
+            <a className="icon" href="mailto:joeybezner@gmail.com"><IoMail /></a>
+            <a className="icon" href="https://www.tiktok.com/@joeysart" target="_blank"><IoLogoTiktok /></a>
+          </nav>
+        </div>
+      </header>
     </>
   )
 }
