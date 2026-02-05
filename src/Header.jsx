@@ -1,0 +1,30 @@
+import { IoLogoLinkedin, IoLogoTiktok, IoMail } from "react-icons/io5";
+import { RiInstagramFill } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
+
+export default function Header(){
+    const navigate = useNavigate();
+    const root = "/portfolio";
+
+    return (
+        <div>
+            <header>
+                <div className="home">
+                    <img src="src/assets/portrait.jpg" alt="portrait" className="portrait" />
+                    <a className="headerTitle" href="" onClick={() => navigate(`${root}/`)}><h1>Joey Bezner</h1></a>
+                    <div className="headerLinkContainer">
+                        <a className="headerLink" href="" onClick={() => navigate(`${root}/works`)}>Works</a>
+                        <a className="headerLink" href="" onClick={() => navigate(`${root}/experience`)}>Experience</a>
+                        <a className="headerLink" href="" onClick={() => navigate(`${root}/about`)}>About</a>
+                    </div>
+                    <nav>
+                        <a className="icon" href="https://www.linkedin.com/in/joeybezner/" target="_blank"><IoLogoLinkedin /></a>
+                        <a className="icon" href="https://www.instagram.com/joeys._art/" target="_blank"><RiInstagramFill /></a>
+                        <a className="icon" href="mailto:joeybezner@gmail.com"><IoMail /></a>
+                        <a className="icon" href="https://www.tiktok.com/@joeysart" target="_blank"><IoLogoTiktok /></a>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    );
+}
