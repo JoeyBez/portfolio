@@ -1,0 +1,17 @@
+{
+    "align": {
+        "title": "Align Magazine",
+        "folderPath": "align",
+        "images": [
+            "final.png",
+            "double-take.png"
+        ]
+    },
+    "realism": {
+        "title": "Realism",
+        "folderPath": "realism",
+        "images": [
+            "juice_wrld.jpg"
+        ]
+    }
+}

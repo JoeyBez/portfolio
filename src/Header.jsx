@@ -1,6 +1,7 @@
 import { IoLogoLinkedin, IoLogoTiktok, IoMail } from "react-icons/io5";
 import { RiInstagramFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
+import portrait from "../public/portrait_transparent.png"
 
 export default function Header(){
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ export default function Header(){
         <div>
             <header>
                 <div className="home">
-                    <img src="src/assets/portrait.jpg" alt="portrait" className="portrait" />
+                    <img src={portrait} alt="portrait" className="portrait" />
                     <a className="headerTitle" href="" onClick={() => navigate(`${root}/`)}><h1>Joey Bezner</h1></a>
                     <div className="headerLinkContainer">
                         <a className="headerLink" href="" onClick={() => navigate(`${root}/works`)}>Works</a>

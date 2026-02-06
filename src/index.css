@@ -1,6 +1,6 @@
 :root{
-  --text-color: black;
-  --background: grey;
+  --text-color: rgb(29, 29, 29);
+  --background: rgb(231, 231, 231);
   --header-bg: white;
 
   background-color: var(--background);
@@ -9,6 +9,10 @@
 
 h1{
   font-size: 2rem;
+}
+
+h1, h2, h3{
+  color: var(--text-color);
 }
 
 a{
@@ -81,4 +85,8 @@ header{
 
 .headerTitle{
   margin-left: 70px;
+}
+
+.thumbnail{
+  width: 200px;
 }
